@@ -5,12 +5,12 @@ import {
 } from "@tanstack/react-query";
 
 import { fetchNoteById } from "@/lib/api";
-import NoteDetailsClient from "./NoteDetailsСlient";
+import NoteDetailsClient from "./NoteDetailsClient";
 
 interface NoteDetailsPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function NoteDetailsPage({
