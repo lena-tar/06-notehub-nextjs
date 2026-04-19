@@ -26,7 +26,7 @@ export default function NoteDetailsClient() {
   }
 
   if (error || !note) {
-    return <p>Could not fetch note details.</p>;
+    return <p>Something went wrong.</p>;
   }
 
   return (
